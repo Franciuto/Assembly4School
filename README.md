@@ -7,3 +7,4 @@ Getting started with memory
 #### [3. Data una lettera scrive precedente e successiva](Es%203%20-%20PrecedenteSuccessivo.asm)
 #### [4. Rot2 Stringa in memoria](Es%204%20-%20Rot2.asm)
 
+lab sab 19
