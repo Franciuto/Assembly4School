@@ -43,7 +43,7 @@ int 21h
 mov AH , 1
 int 21h                 
 sub AL , 30h            ;Sottrae all'imput 30 per convertire da valore esadecimale dell'ascii a corrispondente valore decimale inserito
-mov CL , AL             ;Salva il numero di iterazioni da fare su CL per liberare AL per input successivi (CL perchè descrizione di "LOOP" è "Decrease CX, jump to label if CX not zero")
+mov CL , AL             ;Salva il numero di iterazioni da fare su CL per liberare AL per input successivi (CL perchÃ¨ descrizione di "LOOP" Ã¨ "Decrease CX, jump to label if CX not zero")
 mov [0220h] , CL         ;Salva in memoria il numero originale delle iterazioni da fare
 mov BX , 0200h          ;Imposta su locazione 16 bit BX l'indirizzo di memoria di partenza
            
