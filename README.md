@@ -3,4 +3,4 @@ Getting started with memory
 
 ## Getting Started
 #### [1. Stampa una serie di caratteri](Es%201%20-%20Nome.asm)
-#### [1. Somma di due numeri](Es%202%20-%20Somma.asm)
+#### [2. Somma di due numeri](Es%202%20-%20Somma.asm)
