@@ -1,2 +1,2 @@
 Getting started with memory
-[Link Text](/getting)
+[Link Text](/Save input in memory.asm)
