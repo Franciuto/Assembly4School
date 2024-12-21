@@ -42,3 +42,38 @@ Eseguire e studiare il sorgente allegato. Modificarlo per:
 
 ### [Es. 10 - ASCII Color](Es%2010%20-%20ASCII%20Color.asm)
 Creare un programma che utilizzi i colori per stampare i caratteri ASCII su schermo, variando il colore per ogni carattere.
+
+### [Es. 11 - Countdown Color](Es%2011%20-%20Countdown%20Color.asm)
+Implementare un programma con Emu8086 che consenta di:
+1. Inserire una cifra da tastiera.
+2. Stampare il conto alla rovescia, a partire dal numero inserito fino a zero, utilizzando un colore diverso per ogni numero.
+
+### [Es. 12 - Windows](Es%2012%20-%20Windows.asm)
+Dati una larghezza `W` e un'altezza `H` salvate in opportune variabili:
+1. Disegnare una cornice di dimensione `W x H` caratteri.
+2. Consentire di scegliere la posizione in cui disegnarla usando altre due variabili `X` e `Y` che indicano l'angolo superiore sinistro.
+3. Utilizzare qualsiasi carattere per il disegno della cornice.
+
+### [Es. 13 - A Capo](Es%2013%20-%20A%20Capo.asm)
+Data una cifra `N`:
+1. Stampare, a capo, la cifra precedente se `N` è minore di 5.
+2. Stampare, a capo, la cifra successiva se `N` è maggiore o uguale a 5.
+
+### [Es. 14 - Asterischi](Es%2014%20-%20Asterischi.asm)
+Dato un numero `N` compreso tra 0 e 9:
+1. Stampare una riga di `N` asterischi.
+2. Utilizzare colori diversi per ogni asterisco.
+
+### [Es. 15 - Successive](Es%2015%20-%20Successive.asm)
+Data una lettera `C` e una cifra `N` inserite da tastiera:
+1. Stampare gli `N` caratteri successivi alla lettera `C`.
+
+### [Es. 16 - Capitalize](Es%2016%20-%20Capitalize.asm)
+Dato un carattere minuscolo in input:
+1. Stampare la corrispondente lettera maiuscola (qualsiasi altro carattere viene ignorato).
+2. Il programma continua a effettuare conversioni e si interrompe solo alla pressione della barra spaziatrice.
+3. Stampare un saluto finale prima di terminare.
+
+---
+
+Buon lavoro con l'assembly!
