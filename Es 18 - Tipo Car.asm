@@ -1,7 +1,7 @@
 ; Francesco Fontanesi 11/26/2024
 ; Dato un'input scrivere
-;   C se è una cifra
-;   L se è una lettera
+;   C se Ã¨ una cifra
+;   L se Ã¨ una lettera
 ;   A se altro 
 
 ;	+----+----+
@@ -41,7 +41,7 @@ tipo_car:
     cmp bh , '0'
     jge checkDigit
     
-    jmp other   ;Se non è ne lettera ne Digit vado a Other
+    jmp other   ;Se non Ã¨ ne lettera ne Digit vado a Other
      
     ;Controllo se compreso tra range di lettere minuscole 
     checkLowercase: 
