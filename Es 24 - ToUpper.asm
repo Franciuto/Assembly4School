@@ -33,7 +33,7 @@ lea di , to_print       ; Carico su di l'inizio della stringa per salvare l'outp
 upper:       
     mov bl , [si]       ; Carico valore su bl
     mov bh , [si + 1]   ; Carico su bh il valore successivo per saltare uno strano "0Dh" che viene caricato (??)
-    cmp bh , '$'        ; Controllo se la stringa input è terminata
+    cmp bh , '$'        ; Controllo se la stringa input Ã¨ terminata
     je continue         
     and bl , 11011111b ; Mascheramento in uppercase
     mov dl , bl        ; Salvo l'output in una variabile
