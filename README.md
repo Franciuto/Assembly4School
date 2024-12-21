@@ -15,7 +15,9 @@ Caricare in memoria il proprio Cognome, a partire dalla locazione 0x0200h
 #### [Es. 6](Es%206%20-%20ASCII.asm)
 Implementare un prog. con emu 8086 che popola le locazioni di memoria a partire da 0xggmmh con i caratteri stampabili del codice ASCII, dove mm è il vostro mese di nascita e gg il vostro giorno di nascita. Alla pressione di un tasto qualsiasi il programma stampa poi tutti i codici salvati in memoria, uno per riga.
 #### [Es. 7](Es%207%20-%20ROT13.asm)
-
+Implementare un prog. con emu 8086 che riceve in input parole fino a 10 caratteri. All'inserimento di ogni lettera, stampa accanto la traslata di 13 posti (ad es. A -> N), va a capo e accetta la successiva lettera. 
+#### [Es. 8](Es%208%20-%20Countdown.asm)
+Implementare un prog. con emu 8086 che consente di inserire una cifra da tastiera, quindi va a capo e stampa il conto alla rovescia a partire dal numero inserito fino a zero.
 
 
 
