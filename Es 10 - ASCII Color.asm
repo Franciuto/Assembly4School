@@ -48,12 +48,12 @@ mov es:[si] , dl	;Spostamento del carattere da stampare nella memoria video
 
 mov al , bh         ;Salvataggio su bh il valore salvato in al in modo da evitare che lo scorrimento tra gli sfondi sia interrotto dall'unione con i colori del foreground
 shl bh , 4          ;Nel registro bh si spostano i 4 bit presenti di 4 bit verso sinistra in modo da portarli nella parte alta del numero binario in 8 bit per poter fare spazio alla loro sinistra ai 4 bit riservati al foreground
-or bh , bl          ;Unione i due registri e otterrò: 4 bit per background - 4 bit foreground
+or bh , bl          ;Unione i due registri e otterrÃ²: 4 bit per background - 4 bit foreground
 inc si              ;Spostamento nella memoria video
 mov es:[si] , bh    ;Formattazione del testo attraverso il registro bh preparato appositamente
 inc si	            ;Spostamento nella memoria video
 inc al              ;Incremento del registro al che contiene il vero valore dello scorrimento dei colori del background
 mov bh , al         ;Aggiornamento del registro bh con i valori corretti per lo sfondo salvati in al
-inc bl              ;Incremento di bl per passare al foreground successivo (che invece non è stato toccato)
+inc bl              ;Incremento di bl per passare al foreground successivo (che invece non Ã¨ stato toccato)
 
 loop ripetizione
