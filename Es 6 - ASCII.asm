@@ -1,6 +1,6 @@
 ; Francesco Fontanesi 10/29/2024
 ; Implementare un prog. con emu 8086 che popola le locazioni di memoria a partire da 0xggmmh 
-; con i caratteri stampabili del codice ASCIII, dove mm è il vostro mese di nascita e gg il vostro giorno di nascita
+; con i caratteri stampabili del codice ASCIII, dove mm Ã¨ il vostro mese di nascita e gg il vostro giorno di nascita
 
 ;+----+----+
 ;| AH | AL |
