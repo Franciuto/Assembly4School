@@ -1,6 +1,3 @@
-; Francesco Fontanesi XX/XX/XXXX
-; Consegna 
-
 ;	+----+----+
 ;	| AH | AL |
 ;	+----+----+
