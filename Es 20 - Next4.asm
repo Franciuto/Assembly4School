@@ -24,7 +24,7 @@ start:
     lea bx, str1
 print:
     cmp [bx], 00h             ; Controlla fine stringa
-    je next                   ; Salta se la stringa è terminata
+    je next                   ; Salta se la stringa Ã¨ terminata
     mov dl, [bx]              ; Carica il carattere corrente
     inc bx                    ; Incrementa il puntatore
     int 21h                   ; Stampa il carattere
@@ -41,7 +41,7 @@ next:
 ciclo:
     inc bh                    ; Passa alla lettera successiva
 
-    ; Controlla se il carattere è valido (lettera)
+    ; Controlla se il carattere Ã¨ valido (lettera)
     cmp bh, 'a'
     jae Checkbh1              ; Se >= 'a', potrebbe essere minuscola
     cmp bh, 'A'
@@ -50,10 +50,10 @@ ciclo:
 
 Checkbh1:
     cmp bh, 'z'
-    jle Lowercase_Bh          ; Se <= 'z', è minuscola
+    jle Lowercase_Bh          ; Se <= 'z', Ã¨ minuscola
 Checkbh2:
     cmp bh, 'Z'
-    jle Uppercase_Bh          ; Se <= 'Z', è maiuscola
+    jle Uppercase_Bh          ; Se <= 'Z', Ã¨ maiuscola
 
 Lowercase_Bh:
     mov dh, 'l'               ; Flag per minuscola
@@ -90,7 +90,7 @@ not_overlz:
 
 common:
     int 21h                   ; Stampa il carattere.
-    loop ciclo                ; Continua il ciclo finché CL > 0.
+    loop ciclo                ; Continua il ciclo finchÃ© CL > 0.
     jmp exit
 
 error:
