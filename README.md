@@ -93,11 +93,11 @@ Date due lettere inserite da tastiera:
 Data una lettera da tastiera:
 1. Stampare le successive 4 lettere alternando maiuscole e minuscole.
 
-Es 21
+### [Es. 21 - Next4](./Es%2021%20-%20StringheMacro.asm)
 Aggiungere la gestione delle maiuscole e completare l'esercizio omonimo (in allegato) correggendo il codice e ricorrendo il più possibile all'uso di stringhe e macro. 
 
-Es 22
-Descrizione.txt
+### [Es. 22 - Next4](Commando/Es%2022%20-%20Commando.asm)
+[Descrizione](Commando/Consegna.txt)
 
 ---
 
