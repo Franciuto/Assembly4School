@@ -42,7 +42,3 @@ Eseguire e studiare il sorgente allegato. Modificarlo per:
 
 ### [Es. 10 - ASCII Color](Es%2010%20-%20ASCII%20Color.asm)
 Creare un programma che utilizzi i colori per stampare i caratteri ASCII su schermo, variando il colore per ogni carattere.
-
----
-
-Buon lavoro con l'assembly!
