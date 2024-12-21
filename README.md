@@ -18,7 +18,10 @@ Implementare un prog. con emu 8086 che popola le locazioni di memoria a partire 
 Implementare un prog. con emu 8086 che riceve in input parole fino a 10 caratteri. All'inserimento di ogni lettera, stampa accanto la traslata di 13 posti (ad es. A -> N), va a capo e accetta la successiva lettera. 
 #### [Es. 8](Es%208%20-%20Countdown.asm)
 Implementare un prog. con emu 8086 che consente di inserire una cifra da tastiera, quindi va a capo e stampa il conto alla rovescia a partire dal numero inserito fino a zero.
+#### [Es. 9](Es%208%20-%20Memvideo.asm)
+Eseguire e studiare il sorgente in allegato, Scrivere modificarlo in modo che:
+a. scriva il vostro nome nell'angolo in alto a sinistra in bianco su nero
+b. scriva il vostro cognome nell'angolo in basso a destra distanziando ogni carattere con uno spazio e in modo che ogni lettera sia di un colore diverso
+c. scriva la vostra data di nascita al centro dello schermo in multicolor
 
 
-
-lab sab 19
