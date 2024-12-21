@@ -61,10 +61,10 @@ go_on:
     xor cl, cl
     
 ; Check lettera 1
-    cmp bh, 'a'                ; Controllo se BH è >= 'a'
-    jae Checkbh1               ; Se sì, controllo se è <= 'z'
-    cmp bh, 'A'                ; Controllo se BH è >= 'A'
-    jae Checkbh2               ; Se sì, controllo se è <= 'Z'
+    cmp bh, 'a'                ; Controllo se BH Ã¨ >= 'a'
+    jae Checkbh1               ; Se sÃ¬, controllo se Ã¨ <= 'z'
+    cmp bh, 'A'                ; Controllo se BH Ã¨ >= 'A'
+    jae Checkbh2               ; Se sÃ¬, controllo se Ã¨ <= 'Z'
 Check_Lettera_2:               ; Stessa cosa per BL
     cmp bl, 'a'
     jae Checkbl1
@@ -75,11 +75,11 @@ Check_Lettera_2:               ; Stessa cosa per BL
 ; Controlli lettera 1
 Checkbh1:
     cmp bh, 'z'
-    jle Lowercase_Bh           ; Se sì, imposto lowercase
+    jle Lowercase_Bh           ; Se sÃ¬, imposto lowercase
     jmp Check_Lettera_2        ; Altrimenti controllo BL
 Checkbh2:
     cmp bh, 'Z'
-    jle Uppercase_Bh           ; Se sì, imposto uppercase
+    jle Uppercase_Bh           ; Se sÃ¬, imposto uppercase
     jmp Check_Lettera_2        ; Altrimenti controllo BL
     
 Checkbl1:                      ; Controllo BL per lowercase
