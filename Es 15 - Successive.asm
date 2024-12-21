@@ -46,16 +46,16 @@ mov cl , bl             ;Imposto il ciclo
 next_chars:
     inc bh              ;Incremento BH per prendere in considerazione la cifra successiva
     cmp bh , 'z'        ;Confronto il valore con la 'z'
-    ja zmag_fix         ;Se il valore supera la 'z' è indubbiamente fuori scala e quindi alla parte per risolvere il problema
+    ja zmag_fix         ;Se il valore supera la 'z' Ã¨ indubbiamente fuori scala e quindi alla parte per risolvere il problema
     cmp bh , 'Z'        ;Confronto il valore con la 'Z'
-    ja istofix          ;Se è maggiore significa che si sta andando fuori scala nelle lettere maiuscole ma potrebbe essere che sia semplicemente il valore di una lettera minuscola che si trova infatti dopo la scala delle lettere maiuscole
+    ja istofix          ;Se Ã¨ maggiore significa che si sta andando fuori scala nelle lettere maiuscole ma potrebbe essere che sia semplicemente il valore di una lettera minuscola che si trova infatti dopo la scala delle lettere maiuscole
     jmp continue        ;Se nessuno dei jump viene applicato salto direttamente al continuo del ciclo
 
 
 istofix:
-    cmp bh , 'a'        ;Verifico che il valore sia minore della lettera 'a' perchè in tal caso significa che, il valore SUPERIORE A 'Z' non è un valore di una lettera minuscola 
+    cmp bh , 'a'        ;Verifico che il valore sia minore della lettera 'a' perchÃ¨ in tal caso significa che, il valore SUPERIORE A 'Z' non Ã¨ un valore di una lettera minuscola 
     jb Z_fix            ;Di conseguenza posso procedere a risolvere questo problema
-    jmp continue        ;Se il valore invece è maggiore di 'a' significa che rientra nei valori minuscoli e che quindi questo aggiustamento non è necessario
+    jmp continue        ;Se il valore invece Ã¨ maggiore di 'a' significa che rientra nei valori minuscoli e che quindi questo aggiustamento non Ã¨ necessario
     
 Z_fix:                  
     mov bh , 'A'        ;Imposto bh ad 'A' per riportare il valore sulla scala
