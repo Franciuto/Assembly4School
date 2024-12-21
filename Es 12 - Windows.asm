@@ -28,7 +28,7 @@ int 21h
 
 sub al , '0'        ;Sottrazione del valore ascii di 0 (30) dall'input per avere l'effettivo numero di ripetizioni da fare
 mov cl , al         ;Setup del regisrto cl con le ripetizioni da fare nel ciclo
-mov si , 0002h      ;Setup del registro si per iniziare a stampare in memoria dal secondo spazio dello schermo in quanto il primo è occupato dall'input dell'utente 
+mov si , 0002h      ;Setup del registro si per iniziare a stampare in memoria dal secondo spazio dello schermo in quanto il primo Ã¨ occupato dall'input dell'utente 
 
 mov bl , 1          ;Setup registro per counter dei colori da usare
       
@@ -38,7 +38,7 @@ add al , '0'        ;Aggiunta del corrispettivo ascii di 0 (30) in modo da porta
 mov es:[si] , al    ;Sposto tramite l'indirizzamento indiretto usando la segmentazione il valore del numero da stampare nell'indirizzo della memoria video
 inc bl              ;Incremento il colore
 inc si              ;Vado alla coppia di bit successiva nella memoria video per impostare la formattazione
-mov es:[si] , bl    ;Vado a settare il formato come 0000 + bl ossia foreground = valore contenuto in bl (dato che possiamo inserire solo una cifra nel countdown non c'è modo che incrementando bl si possa superare il 15 ossia il numero che corrisponde al colore massimo)
+mov es:[si] , bl    ;Vado a settare il formato come 0000 + bl ossia foreground = valore contenuto in bl (dato che possiamo inserire solo una cifra nel countdown non c'Ã¨ modo che incrementando bl si possa superare il 15 ossia il numero che corrisponde al colore massimo)
 inc si
 sub al , '0'        ;Sottraggo al valore stampato nuovamente 30 per riportarlo in formato corretto 
 
