@@ -1,7 +1,7 @@
 Getting started with memory
 [Link Text](Save%20input%20in%20memory.asm)
 
-## Getting Started
+## Indice Esercizi
 #### [Es. 1](Es%201%20-%20Nome.asm)
 Scrivere un programma che stampa una serie di caratteri in modo da comporre il vostro nome
 #### [Es. 2](Es%202%20-%20Somma.asm)
