@@ -10,7 +10,7 @@ Scrivere un programma che stampa una serie di caratteri in modo da comporre il p
 ### [Es. 2 - Somma](Es%202%20-%20Somma.asm)
 Scrivere un programma che, dati in input due numeri, calcoli e stampi la loro somma.
 
-### [Es. 3 - Precedente e Successivo](Es%203%20-%20PrecedenteSuccessivo.asm)
+### [Es. 3 - Precedente e Successivo](Es%203%20-%20Precedente%20e%20Successivo.asm)
 Scrivere un programma che, data una lettera in input, stampi la lettera precedente e quella successiva.
 
 ### [Es. 4 - Rot2](Es%204%20-%20Rot2.asm)
@@ -93,7 +93,6 @@ Date due lettere inserite da tastiera:
 Data una lettera da tastiera:
 1. Stampare le successive 4 lettere alternando maiuscole e minuscole.
 
-5 mer 27
 ---
 
 Buon lavoro con l'assembly!
