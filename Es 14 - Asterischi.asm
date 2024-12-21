@@ -26,13 +26,13 @@ mov bl , al             ;Libero al
 xor bh , bh             ;Inizializzo bh a 0
 ;Setup memoria video
 mov ax , 0b800h        
-mov si , 2              ;Inizio dall'indirizzo 2 perchè i primi due sono già occupati dall'input
+mov si , 2              ;Inizio dall'indirizzo 2 perchÃ¨ i primi due sono giÃ  occupati dall'input
 mov es , ax
 ;Controllo che il valore inserito sia un numero valido
 cmp bl , '0'            ;Confronto il valore ascii di a (30) con al (input utente)
-jb error                ;Se al è minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
+jb error                ;Se al Ã¨ minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
 cmp bl , '9'            ;Confronto il valore ascii di z (7A) con al (input utente)
-ja error                ;Se al è maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
+ja error                ;Se al Ã¨ maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
 ;Imposto il ciclo
 mov cl , bl
 sub cl , '0'            ;Sottraggo 30 al numero per renderlo corretto per il ciclo
@@ -49,7 +49,7 @@ sub cl , '0'            ;Sottraggo 30 al numero per renderlo corretto per il cic
 
 
 
-;Stampo error se il valore non è un numero valido
+;Stampo error se il valore non Ã¨ un numero valido
 error:
     mov ah , 2   
     ;Print "ERROR"
