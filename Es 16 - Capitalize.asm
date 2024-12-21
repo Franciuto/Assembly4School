@@ -32,9 +32,9 @@ start:
     
     mov  ah , 2             ;Setup scrittura 
     cmp bh , 'a'            ;Confronto il valore ascii di a (30) con al (input utente)
-    jb error                ;Se al è minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
+    jb error                ;Se al Ã¨ minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
     cmp bh , 'z'            ;Confronto il valore ascii di z (7A) con al (input utente)
-    ja error                ;Se al è maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
+    ja error                ;Se al Ã¨ maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
     
     mov dl , '-'
     int 21h
