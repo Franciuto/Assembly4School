@@ -28,12 +28,12 @@ iterazione:         ;Ciclo che ripete la serie di istruzioni per 10 volte
     mov ah , 1          ;Setup registro per funzione input
     int 21h             ;Richiesta input
     sub al , 'a'        ;Sottrae il valore ASCII della lettera 'a' in modo da avere una comparazione tra lettere e numeri comparabile
-    add al , 13         ;Aggiunge al nuovo valore 13 per eseguire la rotazione di 13 (perÚ nel codice ASCII)
-    cmp al , 26         ;Compara il numero ottenuto con la totalit‡ dei valori ASCII 
-    jl case_minore      ;Utilizzando il "Jump Lower" eseguo delle determinate istruzioni specificate in "case_minore" se il primo numero Ë minore del secondo (Quindi per intenderci se il valore rotato ottenuto Ë compreso nei valori ASCII delle lettere il codice in "case_lower" viene eseguito)
+    add al , 13         ;Aggiunge al nuovo valore 13 per eseguire la rotazione di 13 (per√≤ nel codice ASCII)
+    cmp al , 26         ;Compara il numero ottenuto con la totalit√† dei valori ASCII 
+    jl case_minore      ;Utilizzando il "Jump Lower" eseguo delle determinate istruzioni specificate in "case_minore" se il primo numero √® minore del secondo (Quindi per intenderci se il valore rotato ottenuto √® compreso nei valori ASCII delle lettere il codice in "case_lower" viene eseguito)
     sub al , 26         ;Se il numero esce fuori dai valori ASCII delle lettere, per evitare di stampare valori rotati non corrispondenti a lettere vado a sottrarre 26 per riportare il valore nell'intervallo a-z 
     case_minore:        
-        add al , 'a'        ;SE il numero Ë minore di 26 quindi se Ë incluso nell'intervallo a-z gli viene riaggiunto 'a' quindi il valore precedentemente sottratto 
+        add al , 'a'        ;SE il numero √® minore di 26 quindi se √® incluso nell'intervallo a-z gli viene riaggiunto 'a' quindi il valore precedentemente sottratto 
     mov ah , 2          ;Setup registro stampa
     mov dl , al         ;Stampa nuova lettera cirfrata
     int 21h             
