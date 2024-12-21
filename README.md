@@ -97,8 +97,10 @@ Data una lettera da tastiera:
 Aggiungere la gestione delle maiuscole e completare l'esercizio omonimo (in allegato) correggendo il codice e ricorrendo il più possibile all'uso di stringhe e macro. 
 
 ### [Es. 22 - Commando](Commando/Es%2022%20-%20Commando.asm)
-[Descrizione](Commando/Consegna.txt)
+[Consegna](Commando/Consegna.txt)
 
----
+### [Es. 23 - Rot13 Strings](./Es%2023%20-%20Rot13Strings.asm)
+Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso con ROT13, badando a rimuovere gli spazi e punteggiature, trasformando tutto in minuscolo e senza alterare le cifre.
 
-Buon lavoro con l'assembly!
+### [Es. 24 - To Upper](./Es%2024%20-%20ToUpper.asm)
+Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
