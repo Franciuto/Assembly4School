@@ -24,7 +24,7 @@ int 21h
 lea si , plain_text + 1    ; Imposto si come puntatore della variabile 
 lea di , to_encrypt        ; Imposto si come puntatore della variabile
 
-; Ciclo per rimuovere tutto quello che non è lettere o numeri
+; Ciclo per rimuovere tutto quello che non Ã¨ lettere o numeri
 remove:
     inc si                 ; Scorrimento variabile
     inc di                 ; Scorrimento variabile    
@@ -35,9 +35,9 @@ remove:
     jae into_a             ; Se maggiore uguale allora controllo se anche minore di 'z' => Contenuto in lettere minuscole
     cmp bl , 'A'           ; Controllo con 'A'
     jae into_am            ; Se maggiore uguale allora controllo se anche minore di 'Z' => Contenuto in lettere maiuscole
-    cmp bl , '0'           ; Controllo se è nel range numeri
+    cmp bl , '0'           ; Controllo se Ã¨ nel range numeri
     jae into_num
-    jmp remove_confirm     ; Altrimenti il carattere non è una lettera e va rimosso
+    jmp remove_confirm     ; Altrimenti il carattere non Ã¨ una lettera e va rimosso
        
     into_a:
         cmp bl , 'z'
@@ -56,10 +56,10 @@ remove:
         dec di             ; Se da togliere si fa uno skip del valore
         jmp remove 
              
-    valid:                 ; Se il carattere non è da rimuovere si effettua il mascheramento per portarlo in minuscolo
+    valid:                 ; Se il carattere non Ã¨ da rimuovere si effettua il mascheramento per portarlo in minuscolo
     or bl , 00100000b
     mov [di] , bl          ; Si aggiunge il carattere minuscolo in una variabile per il crypt rot13
-    jmp remove             ; Altrimenti è da rimuovere
+    jmp remove             ; Altrimenti Ã¨ da rimuovere
  
    fine:                      
        lea si, to_encrypt + 1 ; Si passa al crypt impostando i puntatori
