@@ -1,0 +1,77 @@
+COMMANDO e' un vecchio videogame arcade del tipo sparatutto a scorrimento militare. Vogliamo implementare un suo clone  su un processore con pochissima memoria RAM (4k). Per riuscire nell'impresa, si è pensato di codificare lo stato del personaggio in una sola WORD (una variabile/registro a 16bit)
+Nella word di stato sono codificati sia valori numerici (ad esempio attributi come la salute, scudo, ecc) sia flag booleani (ad esempio "modalità ghost" o "possiede chiave"). 
+La codifica dei 16 bit è la seguente:
+
+
+Bit 0–2 (3 bit): Scudo (0–7)
+0 = Nessun scudo
+7 = scudo al max
+
+Bit 3–6 (4 bit): HP (0–15)
+Un valore discreto per rappresentare la salute:
+0 = Morto
+15 = Salute massima.
+
+Bit 7 (1 bit): Stato "ghost"
+Easter egg
+0 = normale
+1 = il personaggio è trasparente ai proiettili
+
+Bit 8 (1 bit): Stato "invisibile"
+Flag che indica se il personaggio è invisibile (non viene attaccato dai nemici):
+0 = Visibile
+1 = Invisibile.
+
+
+Bit 9–11 (3 bit): Tipo di arma (0–7)
+Codifica l'arma che il personaggio sta usando:
+
+0 = Nessuna arma (pugni)
+1 = pistola
+2 = fucile
+3 = mitragliatore
+... e così via.
+
+Bit 12 (1 bit): Ha la chiave
+Flag per indicare se il personaggio possiede una chiave per passare al livello successivo:
+0 = Non ha la chiave
+1 = Ha la chiave.
+
+Bit 13–15 (3 bit): Direzione corrente (0–7)
+Direzione in cui il personaggio è orientato
+0 = Nord
+1 = Nord-Est
+2 = Est
+3 = Sud-Est
+4 = Sud
+5 = Sud-Ovest
+6 = Ovest
+7 = Nord-Ovest.
+
+Esempio di Stato
+Supponiamo che il personaggio abbia le seguenti caratteristiche:
+Livello scudo: 5
+HP: 8
+Ghost mode: Sì
+Invisibile: No
+Tipo di arma: 2 (fucile)
+Possiede la chiave speciale: Sì
+Direzione corrente: 3 (Sud-Est).
+
+La word risultante sarà:
+101 1000 1 0 010 1 011 = 1011 0001 0010 1011 = 0xB12B
+ S    H  G I  A  C  D  
+Implementa un programma che dato una word (hard-coded nel listato), stampa lo stato del personaggio.
+
+Es:
+
+AX =  0xB12B
+Output:
+
+S5
+H8
+Gs
+In
+A2
+Cs
+D3
