@@ -1,4 +1,4 @@
-# Getting Started with Memory
+# Getting Started
 
 Questa directory contiene una serie di esercizi in assembly per il microprocessore 8086. Gli esercizi esplorano vari aspetti della programmazione a basso livello, come la gestione della memoria e la manipolazione dei caratteri.
 
@@ -104,3 +104,7 @@ Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso c
 
 ### [Es. 24 - To Upper](./Es%2024%20-%20ToUpper.asm)
 Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
+
+---
+#### File template
+[COM Template](./0_com_template.txt)
