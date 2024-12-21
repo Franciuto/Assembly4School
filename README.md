@@ -10,5 +10,9 @@ Scrivere un programma che dati in input due numeri calcoli la loro somma
 Scrivere un programma che data una lettera in input stampi la precedente e la successiva
 #### [Es. 4](Es%204%20-%20Rot2.asm)
 Scrivere un programma che data un strigna in memoria la stampa con ogni lettera aumentata di 2
+#### [Es. 5](Es%205%20-%20Cognome.asm)
+Caricare in memoria il proprio Cognome, a partire dalla locazione 0x0200h
+
+
 
 lab sab 19
