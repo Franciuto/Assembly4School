@@ -26,9 +26,9 @@ mov ah , 2
 mov bl , al
 
 cmp bl , '0'            ;Confronto il valore ascii di a (30) con al (input utente)
-jb error:               ;Se al è minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
+jb error:               ;Se al Ã¨ minore di 'a' allora non fa parte delle lettere minuscole --> Passo a "error"
 cmp bl , '9'            ;Confronto il valore ascii di z (7A) con al (input utente)
-ja error:               ;Se al è maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
+ja error:               ;Se al Ã¨ maggiore di 'z' allora non fa parte delle lettere minuscole --> Passo a "error"
 
 mov dl , 10             ;Line Feed
 int 21h
@@ -38,8 +38,8 @@ int 21h
 cmp bl , '0'            ;Confronto al con 0
 je exit                 ;Se il risultato tra il cmp e'0 quindi se (n e' zero --> 0-0 = 0) salto a exit per terminare e non stampare numeri minori di 0
 cmp bl , '5'            ;Confronto con 5
-jb minore               ;Se al è minore di 5 allora salto a minore
-jae maggiore_uguale     ;Se al è maggiore o uguale a 5 allora salto a maggiore
+jb minore               ;Se al Ã¨ minore di 5 allora salto a minore
+jae maggiore_uguale     ;Se al Ã¨ maggiore o uguale a 5 allora salto a maggiore
 jmp exit                ;Salto a jump per finire il programma nel caso in cui non sia nessuna delle precedenti
 
 minore:
@@ -51,7 +51,7 @@ maggiore_uguale:
     jmp exit            ;Salto a exit
 
 
-;Stampo error se il valore non è un numero
+;Stampo error se il valore non Ã¨ un numero
 error:   
     ;Print "ERROR"
     mov dl , 13
