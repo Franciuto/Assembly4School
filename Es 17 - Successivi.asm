@@ -128,15 +128,15 @@ Checkbl2:
 
 ;Scrittura nel registro corretto per determinare le lettere (BH --> CH)    
 Lowercase_Bh:
-    mov ch , 'l'                                              ;  CH = "l" --> BH è Lowercase
-    jmp Check_Lettera_2                                       ;  CH = "U" --> BH è UPPERCASE
+    mov ch , 'l'                                              ;  CH = "l" --> BH Ã¨ Lowercase
+    jmp Check_Lettera_2                                       ;  CH = "U" --> BH Ã¨ UPPERCASE
 Uppercase_Bh:
     mov ch , 'U'
     jmp Check_Lettera_2 
 ;Scrittura nel registro corretto per determinare le lettere (BL --> CL)    
 Lowercase_Bl:
-    mov cl , 'l'                                              ;  CL = "l" --> BL è Lowercase
-    jmp Continue                                              ;  CL = "U" --> BL è UPPERCASE
+    mov cl , 'l'                                              ;  CL = "l" --> BL Ã¨ Lowercase
+    jmp Continue                                              ;  CL = "U" --> BL Ã¨ UPPERCASE
 Uppercase_Bl:
     mov cl , 'U' 
     
@@ -152,22 +152,22 @@ mov al , dh
 dec dh             ;DH => Lettera precedente della prima
 inc al             ;AL => Lettera successiva della prima
 
-cmp ch , 'l'       ;Confronto la prima lettera con l per capire se è o non è maiuscola
+cmp ch , 'l'       ;Confronto la prima lettera con l per capire se Ã¨ o non Ã¨ maiuscola
 je ctrl_fix_lowercase
 jmp CTRL_FIX_UPPERCASE
 
-;Se è in minuscolo
+;Se Ã¨ in minuscolo
 ctrl_fix_lowercase:
-    cmp dh , 'a'   ;Confronto dh con 'a' perchè essendo a decrementato può andare solo in negativo e può quindi sforare solo la a
+    cmp dh , 'a'   ;Confronto dh con 'a' perchÃ¨ essendo a decrementato puÃ² andare solo in negativo e puÃ² quindi sforare solo la a
     jb fix_a_l
-    cmp al , 'z'   ;Confronto al con 'z' perchè essendo a aumentato può andare solo in positivo e può quindi sforare solo la z
+    cmp al , 'z'   ;Confronto al con 'z' perchÃ¨ essendo a aumentato puÃ² andare solo in positivo e puÃ² quindi sforare solo la z
     ja fix_z_l
     jmp next
 
 CTRL_FIX_UPPERCASE:
-    cmp dh , 'A'  ;Confronto dh con 'A' perchè essendo a decrementato può andare solo in negativo e può quindi sforare solo la A
+    cmp dh , 'A'  ;Confronto dh con 'A' perchÃ¨ essendo a decrementato puÃ² andare solo in negativo e puÃ² quindi sforare solo la A
     jb fix_A_U
-    cmp al , 'Z'  ;Confronto dh con 'Z' perchè essendo a decrementato può andare solo in negativo e può quindi sforare solo la Z
+    cmp al , 'Z'  ;Confronto dh con 'Z' perchÃ¨ essendo a decrementato puÃ² andare solo in negativo e puÃ² quindi sforare solo la Z
     ja fix_A_U
     jmp next
      
