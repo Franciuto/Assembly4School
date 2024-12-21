@@ -74,6 +74,26 @@ Dato un carattere minuscolo in input:
 2. Il programma continua a effettuare conversioni e si interrompe solo alla pressione della barra spaziatrice.
 3. Stampare un saluto finale prima di terminare.
 
+### [Es. 17 - Successivi](Es%2017%20-%20Successivi.asm)
+Leggere due caratteri da tastiera e stampare `S` se sono successivi sulla tavola ASCII, `N` altrimenti.
+
+### [Es. 18 - Tipo Carattere](Es%2018%20-%20Tipo%20Car.asm)
+Dato un carattere in input:
+1. Stampare `C` se è una cifra, `L` se è una lettera, `A` altrimenti.
+2. Continuare a richiedere l'input fino all'inserimento del carattere `\`.
+
+### [Es. 19 - Lessicografico](Es%2019%20-%20Lessicografico.asm)
+Date due lettere inserite da tastiera:
+1. Verificare se sono in ordine lessicografico:
+   - Stampare `N` in caso negativo.
+   - Stampare l'elenco delle lettere comprese in caso positivo.
+2. Il programma termina quando le due lettere coincidono, stampando il messaggio "...bye".
+
+### [Es. 20 - Next4](Es%2020%20-%20Next4.asm)
+Data una lettera da tastiera:
+1. Stampare le successive 4 lettere alternando maiuscole e minuscole.
+
+5 mer 27
 ---
 
 Buon lavoro con l'assembly!
