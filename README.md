@@ -112,4 +112,5 @@ Data una stringa inserita contenente due cifre convertirla in un numero unsigned
 ---
 ##### File template
 [COM Template](Templates/0_com_template.txt)
+
 [EXE Template](Templates/1_exe_template.txt)
