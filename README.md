@@ -106,6 +106,7 @@ Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso c
 Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
 
 ### [Compiti Natale](Compiti%20Natale)
+# [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided1.exe)
 
 ---
 #### File template
