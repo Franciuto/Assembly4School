@@ -1,0 +1,21 @@
+; Francesco Fontanesi XX/XX/XX
+; Consegna
+
+data segment
+
+ends
+
+stack segment
+
+ends
+
+code segment
+start:
+
+    mov ax, data
+    mov ds, ax
+    mov es, ax
+    
+ends
+
+end start 
