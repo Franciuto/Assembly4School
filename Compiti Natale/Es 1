@@ -1,1 +1,33 @@
+; multi-segment executable file template.
 
+data segment
+str db '42', 0
+ends
+
+stack segment
+
+ends
+
+code segment
+start:
+; set segment registers:
+    mov ax, data
+    mov ds, ax
+    mov es, ax
+
+    ; add your code here     
+    lea si , str
+    mov al , [si]
+    sub al , '0'
+    xor ah , ah
+    mov bl , 10
+    mul bl 
+    
+    inc si 
+    mov dl , [si]
+    sub dl , '0'
+    add al , dl
+    
+ends
+
+end start ; set entry point and stop the assembler.
