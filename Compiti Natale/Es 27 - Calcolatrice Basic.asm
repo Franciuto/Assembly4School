@@ -60,7 +60,7 @@ start:
     cmp [si] , ':'          ; Controllo con il ':'         
     jz op_div                                        
     
-    ; Se nessuna operazione Ë riconosciuta il programma da errore
+    ; Se nessuna operazione √® riconosciuta il programma da errore
     ; Stampa errore
     lea dx , error
     int 21h
@@ -78,7 +78,7 @@ start:
         jmp next       
     op_mul: 
         mov al , bh         ; Carico in al il primo operando
-        mul bl              ; Moltiplico , Il valore Ë gi‡ in al quindi non sposto niente
+        mul bl              ; Moltiplico , Il valore √® gi√† in al quindi non sposto niente
         jmp next
         
     op_div:
@@ -88,12 +88,12 @@ start:
         mov al , bh         ; Sposto l'operando
         xor ah , ah         ; Pulisco ah
         xor bh , bh         ; Pulisco bh
-        div bx              ; Divido , Il valore Ë gi‡ in al quindi non sposto niente
+        div bx              ; Divido , Il valore √® gi√† in al quindi non sposto niente
         jmp next
     next: 
         xor ah , ah         ; Pulisco ah
         mov bl , 10         ; Sposto in bl il divisore
-        div bl              ; Divido per isolare le decine dalle unit‡
+        div bl              ; Divido per isolare le decine dalle unit√†
         add al , '0'        ; Conversione in ascii
         add ah , '0'        ; Conversione in ascii     
         
