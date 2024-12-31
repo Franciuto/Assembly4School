@@ -106,9 +106,10 @@ Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso c
 Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
 
 ### [Compiti Natale](Compiti%20Natale)
-##### [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided1.exe)
+##### [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided1.asm)
 Data una stringa inserita contenente due cifre convertirla in un numero unsigned di due cifre
-
+##### [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided2.asm)
+Stampa di un numero unsigned a due cifre (hard-coded)
 ---
 ##### File template
 [COM Template](Templates/0_com_template.txt)
