@@ -111,6 +111,10 @@ Data una stringa inserita contenente due cifre convertirla in un numero unsigned
 ##### [Esercizio Guidato 1](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
 Stampa di un numero unsigned a due cifre (hard-coded)
 
+##### [Calcolatrice Basic](Compiti%20Natale/Es%2027%20-%20Calcolatrice%20Basic.asm)
+Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
+
+
 ---
 ##### File template
 [COM Template](Templates/0_com_template.txt)
