@@ -2,6 +2,10 @@
 ; Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
 
 data segment 
+   quoziente db 'Il quoziente vale $'
+   resto db ' con resto $'
+   prodotto db 'Il prodotto vale: $'
+   risultato db 'Il risultato vale: $'
    error db 'ERROR!!$'                                             
    intro db 'Calcolatrice Assembly$'
    prompt db 'Inserire operazione, operando1 e operando2: $'
@@ -57,7 +61,7 @@ start:
     jz op_sub
     cmp [si] , 'x'          ; Controllo con il 'x'
     jz op_mul
-    cmp [si] , ':'          ; Controllo con il ':'         
+    cmp [si] , 'd'          ; Controllo con il ':'         
     jz op_div                                        
     
     ; Se nessuna operazione è riconosciuta il programma da errore
@@ -67,29 +71,47 @@ start:
     jmp fine
     
     ; Calcolo
-    op_add:
+    op_add:         
+        lea dx , risultato  ; Scrivo stringa risultato
+        int 21h
         add bh , bl         ; Faccio una comune somma passando gli operandi
         mov al , bh         ; Sposto il risultato in al (come in tutte le operazioni)
         jmp next
         
-    op_sub:
+    op_sub: 
+        lea dx , risultato  ; Scrivo stringa risultato
+        int 21h
         sub bh , bl         ; Faccio una comune sottrazione passando gli operandi
         mov al , bh         ; Sposto il risultato in al (come in tutte le operazioni)
         jmp next       
-    op_mul: 
+    op_mul:
+        lea dx , prodotto   ; Scrivo stringa prodotto
+        int 21h
         mov al , bh         ; Carico in al il primo operando
         mul bl              ; Moltiplico , Il valore è già in al quindi non sposto niente
         jmp next
         
     op_div:
-        cmp bl , '0'
-        xor ch , ch         ; Pulisco ch
+        lea dx , quoziente
+        int 21h
         xor dx , dx         ; Pulisco tutto dx
         mov al , bh         ; Sposto l'operando
         xor ah , ah         ; Pulisco ah
         xor bh , bh         ; Pulisco bh
-        div bx              ; Divido , Il valore è già in al quindi non sposto niente
-        jmp next
+        div bx              ; Divido , Il valore è già in al quindi non sposto niente 
+        add al , '0'        ; Conversione in ascii
+        add bl , '0'        ; Conversione in ascii
+        mov ah , 2h         
+        mov dl , al         ; Scrittura quoziente
+        int 21h
+        mov ah , 9h         
+        lea dx , resto      ; Scrittura stringa resto
+        int 21h
+        mov ah , 2h
+        mov dl , bl         ; Scrittura resto
+        int 21h
+        jmp fine
+        
     next: 
         xor ah , ah         ; Pulisco ah
         mov bl , 10         ; Sposto in bl il divisore
@@ -99,6 +121,7 @@ start:
         
         ; Stampa dei valori 
         mov bh , ah
+        cmp bl , '0'
         mov dl , al
         mov ah , 02h        
         int 21h
