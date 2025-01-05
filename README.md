@@ -105,7 +105,7 @@ Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso c
 #### [Es. 24 - To Upper](./Es%2024%20-%20ToUpper.asm)
 Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
 
-### [Compiti Natale](Compiti%20Natale)
+## [Compiti Natale](Compiti%20Natale)
 ##### [Es. 25 - Guided 1](Compiti%20Natale/Es%2025%20-%20Guided1.asm)
 Data una stringa inserita contenente due cifre convertirla in un numero unsigned di due cifre
 ##### [Es. 26 - Guided 2](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
