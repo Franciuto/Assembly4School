@@ -45,15 +45,15 @@ main proc
 STAMPA_NUMERO proc
    xor dx , dx                      ; Pulizia registri
    xor cx , cx                      ; Pulizia registri
-   mov bx , 10                      ; Divisore per dividere decine e unit‡
+   mov bx , 10                      ; Divisore per dividere decine e unit√†
    
    divisione:
       div bx                        ; Divisione tra Ax e 10
       push dx                       ; Salvo il quoziente (cifra che mi interessa) sullo stack
       xor dx , dx                   ; Resetto per la prossima operazione
       inc cx                        ; Aumento cx per tenere conto di quante cifre sono state pushate
-      or ax , ax                    ; Controllo se il quoziente Ë 0
-      jz stampa                     ; Se Ë zero e quindi tutte le cifre sono state convertite vado alla stampa
+      or ax , ax                    ; Controllo se il quoziente √® 0
+      jz stampa                     ; Se √® zero e quindi tutte le cifre sono state convertite vado alla stampa
       jmp divisione                 ; Altrimenti continuo a dividere 
       
    stampa:
@@ -61,7 +61,7 @@ STAMPA_NUMERO proc
       add dl , '0'                  ; Converto in ascii
       mov ah , 2h
       int 21h                       ; Stampo dl (la cifra)
-      loop stampa                   ; Dato che cx contiene quante cifre sono state convertite finchË non Ë 0 (tutte sono stampate) continua
+      loop stampa                   ; Dato che cx contiene quante cifre sono state convertite finch√® non √® 0 (tutte sono stampate) continua
    stampa_numero endp
       
 end main
