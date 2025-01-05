@@ -117,7 +117,8 @@ Stampa di un numero unsigned a due cifre (hard-coded)
 Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
 ##### [Es. 30 - Stampa Numeri 16 Bit](Compiti%20Natale/Es%2030%20-%20StampaNumeri%2016Bit.asm)
 Partendo dall’esempio2, estendere la logica del programma in modo che supporti numeri a 8bit e stampi numeri fino a 255 (per i più ardimentosi numeri fino a 65535).
-
+##### [Es. 31 - Stampa Numeri 16 Bit con procedura](Compiti%20Natale/Es%2031%20-%20StampaNumeri%2016Bit%20proc.asm)
+Implementare una procedura che stampa a schermo il numero a più cifre passato attraverso AX
 
 ---
 ##### File template
