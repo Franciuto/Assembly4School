@@ -11,7 +11,7 @@ main proc
    mov ax , @data
    mov ds , ax
 
-; Scrittura descrizione programma
+; Code here
 
 end main
 ret 
