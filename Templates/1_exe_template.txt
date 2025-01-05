@@ -1,21 +1,17 @@
 ; Francesco Fontanesi XX/XX/XX
 ; Consegna
 
-data segment
+.model SMALL
+.stack 100h
+.data
 
-ends
+.code
+main proc
+; Caricamento data segment
+   mov ax , @data
+   mov ds , ax
 
-stack segment
+; Scrittura descrizione programma
 
-ends
-
-code segment
-start:
-
-    mov ax, data
-    mov ds, ax
-    mov es, ax
-    
-ends
-
-end start 
+end main
+ret 
