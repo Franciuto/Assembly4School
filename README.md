@@ -1,4 +1,4 @@
-# Getting Started
+# Assembly4SChool
 
 Questa directory contiene una serie di esercizi in assembly per il microprocessore 8086. Gli esercizi esplorano vari aspetti della programmazione a basso livello, come la gestione della memoria e la manipolazione dei caratteri.
 
@@ -121,6 +121,8 @@ partendo dall’esempio1, estendere la logica del programma in modo che supporti
 Partendo dall’esempio2, estendere la logica del programma in modo che supporti numeri a 8bit e stampi numeri fino a 255 (per i più ardimentosi numeri fino a 65535).
 ##### [Es. 31 - Stampa Numeri 16 Bit con procedura](Compiti%20Natale/Es%2031%20-%20StampaNumeri%2016Bit%20proc.asm)
 Implementare una procedura che stampa a schermo il numero a più cifre passato attraverso AX
+##### [Es. 32 - Conversione stringa procedura(16bit)](Compiti%20Natale/Es%2032%20-%20String%20to%20Int%20Procedura.asm)
+Utilizzo di una procedura per estrarre il numero decimale unisgned a 16 bit massimo da una stringa e salvarlo in AX
 
 ---
 ##### File template
