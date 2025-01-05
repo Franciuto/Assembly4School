@@ -1,6 +1,6 @@
 ; Francesco Fontanesi 31/12/2024
-; partendo dall’esempio2, estendere la logica del programma in modo che supporti numeri a 8bit 
-; e stampi numeri fino a 255 (per i più ardimentosi numeri fino a 65535).
+; partendo dallâ€™esempio2, estendere la logica del programma in modo che supporti numeri a 8bit 
+; e stampi numeri fino a 255 (per i piÃ¹ ardimentosi numeri fino a 65535).
 
 .model small
 .stack 100h
@@ -26,7 +26,7 @@ main proc
    
    xor dx , dx                      ; Pulizia registri
    xor cx , cx                      ; Pulizia registri
-   mov bx , 10                      ; Divisore per dividere decine e unità
+   mov bx , 10                      ; Divisore per dividere decine e unitÃ 
    mov ax, num 
     
    divisione:
@@ -34,8 +34,8 @@ main proc
       push dx                       ; Salvo il quoziente (cifra che mi interessa) sullo stack
       xor dx , dx                   ; Resetto per la prossima operazione
       inc cx                        ; Aumento cx per tenere conto di quante cifre sono state pushate
-      or ax , ax                    ; Controllo se il quoziente è 0
-      jz stampa                     ; Se è zero e quindi tutte le cifre sono state convertite vado alla stampa
+      or ax , ax                    ; Controllo se il quoziente Ã¨ 0
+      jz stampa                     ; Se Ã¨ zero e quindi tutte le cifre sono state convertite vado alla stampa
       jmp divisione                 ; Altrimenti continuo a dividere 
       
    stampa:
@@ -43,7 +43,7 @@ main proc
       add dl , '0'                  ; Converto in ascii
       mov ah , 2h
       int 21h                       ; Stampo dl (la cifra)
-      loop stampa                   ; Dato che cx contiene quante cifre sono state convertite finchè non è 0 (tutte sono stampate) continua 
+      loop stampa                   ; Dato che cx contiene quante cifre sono state convertite finchÃ¨ non Ã¨ 0 (tutte sono stampate) continua 
 
 end main
 ret
