@@ -106,16 +106,16 @@ Richiedere l'immisione di una stringa da tastiera. Codificare il testo immesso c
 Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare la stringa in caratteri maiuscoli
 
 ### [Compiti Natale](Compiti%20Natale)
-##### [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided1.asm)
+##### [Es. 25 - Guided 1](Compiti%20Natale/Es%2025%20-%20Guided1.asm)
 Data una stringa inserita contenente due cifre convertirla in un numero unsigned di due cifre
-##### [Esercizio Guidato 2](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
+##### [Es. 26 - Guided 2](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
 Stampa di un numero unsigned a due cifre (hard-coded)
-##### [Esercizio Guidato 3](Compiti%20Natale/Es%2027%20-%20Guided3.asm)
+##### [Es. 27 - Guided 3](Compiti%20Natale/Es%2027%20-%20Guided3.asm)
 Stampa di un numero unsigned a due cifre (hard-coded)
 
-##### [Calcolatrice Basic](Compiti%20Natale/Es%2028%20-%20Calcolatrice%20Basic.asm)
+##### [Es. 28 - Calcolatrice Basic](Compiti%20Natale/Es%2028%20-%20Calcolatrice%20Basic.asm)
 Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
-##### [Stampa Numeri 16 Bit](Compiti%20Natale/Es%2030%20-%20StampaNumeri%2016Bit.asm)
+##### [Es. 30 - Stampa Numeri 16 Bit](Compiti%20Natale/Es%2030%20-%20StampaNumeri%2016Bit.asm)
 Partendo dall’esempio2, estendere la logica del programma in modo che supporti numeri a 8bit e stampi numeri fino a 255 (per i più ardimentosi numeri fino a 65535).
 
 
