@@ -1,5 +1,5 @@
 ; Francesco Fontanesi 05/01/2025
-; partendo dall’esercizio precedente, trasforma il codice nella procedura GETINT che permette di inserire un numero da tastiera 
+; partendo dallâ€™esercizio precedente, trasforma il codice nella procedura GETINT che permette di inserire un numero da tastiera 
 ; e lo ritorna mediante il registro AX.
 
 ; Il programma supporta numeri fino a 65535 
@@ -51,7 +51,7 @@ convert_number proc
       mov cx, ax            ; Salva il numero corrente in cx
       mov ax, result        ; Carica il risultato semi definitivo in ax
       mul bx                ; ax = ax * 10 (sposta a sinistra le cifre)
-      add ax, cx            ; Somma il nuovo numero come unità
+      add ax, cx            ; Somma il nuovo numero come unitÃ 
       mov result, ax           ; Salva il nuovo risultato
 
       inc si                ; Passa al prossimo carattere
