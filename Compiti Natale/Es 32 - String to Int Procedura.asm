@@ -32,10 +32,10 @@ main proc
       lea dx , fine
       int 21h
    
-   call convert_number
+   call GETINT
 
 ; Procedura per la conversione del numero necessita numero come ascii in "input" e una variabile di appoggio da una word "result" 
-convert_number proc 
+GETINT proc 
 ; Setup ciclo
    lea si , input + 2
    xor ah , ah
@@ -52,7 +52,7 @@ convert_number proc
       mov ax, result        ; Carica il risultato semi definitivo in ax
       mul bx                ; ax = ax * 10 (sposta a sinistra le cifre)
       add ax, cx            ; Somma il nuovo numero come unità
-      mov result, ax           ; Salva il nuovo risultato
+      mov result, ax        ; Salva il nuovo risultato
 
       inc si                ; Passa al prossimo carattere
       jmp convert_loop      ; Continua il ciclo
