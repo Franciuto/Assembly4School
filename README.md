@@ -1,4 +1,4 @@
-# Assembly4SChool
+# Assembly4School
 
 Questa directory contiene una serie di esercizi in assembly per il microprocessore 8086. Gli esercizi esplorano vari aspetti della programmazione a basso livello, come la gestione della memoria e la manipolazione dei caratteri.
 
