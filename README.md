@@ -108,10 +108,12 @@ Richiedere l'immissione di una stringa con caratteri qualsiasi; a capo, stampare
 ### [Compiti Natale](Compiti%20Natale)
 ##### [Esercizio Guidato 1](Compiti%20Natale/Es%2025%20-%20Guided1.asm)
 Data una stringa inserita contenente due cifre convertirla in un numero unsigned di due cifre
-##### [Esercizio Guidato 1](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
+##### [Esercizio Guidato 2](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
+Stampa di un numero unsigned a due cifre (hard-coded)
+##### [Esercizio Guidato 3](Compiti%20Natale/Es%2027%20-%20Guided3.asm)
 Stampa di un numero unsigned a due cifre (hard-coded)
 
-##### [Calcolatrice Basic](Compiti%20Natale/Es%2027%20-%20Calcolatrice%20Basic.asm)
+##### [Calcolatrice Basic](Compiti%20Natale/Es%2028%20-%20Calcolatrice%20Basic.asm)
 Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
 
 
