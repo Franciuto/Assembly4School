@@ -125,7 +125,7 @@ Implementare una procedura che stampa a schermo il numero a più cifre passato a
 Utilizzo di una procedura per estrarre il numero decimale unisgned a 16 bit massimo da una stringa e salvarlo in AX
 
 ---
-##### File template
+#### File template
 [COM Template](Templates/0_com_template.txt)
 
 [EXE Template](Templates/1_exe_template.txt)
