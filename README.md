@@ -111,7 +111,7 @@ Data una stringa inserita contenente due cifre convertirla in un numero unsigned
 ##### [Es. 26 - Guided 2](Compiti%20Natale/Es%2026%20-%20Guided2.asm)
 Stampa di un numero unsigned a due cifre (hard-coded)
 ##### [Es. 27 - Guided 3](Compiti%20Natale/Es%2027%20-%20Guided3.asm)
-Stampa di un numero unsigned a due cifre (hard-coded)
+Esercizio di calcolo viaggi fattibili
 
 ##### [Es. 28 - Calcolatrice Basic](Compiti%20Natale/Es%2028%20-%20Calcolatrice%20Basic.asm)
 Creazione calcolatrice che accetta operandi mono-cifra interi e restituisce il risultato
@@ -123,6 +123,8 @@ Partendo dall’esempio2, estendere la logica del programma in modo che supporti
 Implementare una procedura che stampa a schermo il numero a più cifre passato attraverso AX
 ##### [Es. 32 - Conversione stringa procedura (16bit)](Compiti%20Natale/Es%2032%20-%20String%20to%20Int%20Procedura.asm)
 Utilizzo di una procedura per estrarre il numero decimale unisgned a 16 bit massimo da una stringa e salvarlo in AX
+##### [Es. 33 - Transporter](Compiti%20Natale/Es%2033%20-%20Transporter.asm)
+Esercizio di calcolo viaggi fattibili (Es 27) con input implementato
 
 ---
 #### File template
