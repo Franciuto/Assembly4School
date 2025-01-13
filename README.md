@@ -131,7 +131,10 @@ Esercizio di calcolo viaggi fattibili (Es 27) con input implementato
 ##### [Es. 34 - Inverti stringa stack](/Es%2034%20-%20invert_stack.asm)
 Stampare la stringa richiesta in input invertita usando lo stack
 ##### [Es. 35 - Inverti stringa buffer](/Es%2035%20-%20invert_buffer.asm)
-Stampare la stringa richiesta in input invertita usando lo stack
+Stampare la stringa richiesta in input invertita usando un buffer
+##### [Es. 35 - Inverti stringa buffer](/Es%2035%20-%20str_conversions.asm)
+Convertire una stringa in decimale tramite una procedura str2int
+Convertire un numero decimale in stringa stampabile con la procedura int2str
 
 ---
 #### File template
