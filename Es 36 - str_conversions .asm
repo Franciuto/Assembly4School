@@ -62,7 +62,7 @@ main proc
          mov cx , ax                    ; Salva il numero corrente in cx
          mov ax , result                ; Carico il risultato definitivo in ax
          mul bx                         ; ax = ax * 10 (sposta a sinistra le cifre)
-         add ax , cx                    ; Somma il nuovo numero come unit‡
+         add ax , cx                    ; Somma il nuovo numero come unit√†
          mov result , ax                ; Salva il nuovo risultato
          
          inc si                         ; Passo al prossimo carattere
@@ -83,8 +83,8 @@ main proc
          push dx                       ; Salvo il quoziente ossia la cifra che mi interessa sullo stack
          xor dx , dx                   ; Resetto per la prossima operazione
          inc cx                        ; Aumento per tenere conto di tutte le cifre pushate
-         or ax , ax                    ; Controllo se il quoziente Ë zero
-         jz string_composer            ; Se Ë zero tutte le cifre sono state pushate (vado alla composizione stringa)
+         or ax , ax                    ; Controllo se il quoziente √® zero
+         jz string_composer            ; Se √® zero tutte le cifre sono state pushate (vado alla composizione stringa)
          jmp divisione                 ; Altrimenti continuo a dividere
          
       string_composer:
