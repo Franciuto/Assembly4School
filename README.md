@@ -127,6 +127,11 @@ Utilizzo di una procedura per estrarre il numero decimale unisgned a 16 bit mass
 Esercizio di calcolo viaggi fattibili (Es 27) con input implementato
 
 ---
+
+##### [Es. 34 - Inverti stringa](Compiti%20Natale/Es%2034%20-%20invert_stack.asm)
+Stampare la stringa richiesta in input invertita usando lo stack
+
+---
 #### File template
 [COM Template](Templates/0_com_template.txt)
 
