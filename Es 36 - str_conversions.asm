@@ -37,16 +37,20 @@ main proc
    ; Setup int2str
    lea dx , to_print
    add dx , 2
+   xor cl , cl
+   
    ; Call int2str
    call int2str
    
 ; Stampa finale
    mov ah , 9h
-   lea dx , prompt2 + 1
+   lea dx , prompt2
    int 21h
    
-   lea dx , to_print
+   lea dx , to_print + 1
    int 21h
+   jmp fine
+
 
 ; Procedura che ricevendo in ax l'offset della stringa ritorna in ax il numero in essa contenuta in formato decimale
    str2int proc
@@ -87,10 +91,15 @@ main proc
          jz string_composer            ; Se è zero tutte le cifre sono state pushate (vado alla composizione stringa)
          jmp divisione                 ; Altrimenti continuo a dividere
          
-      string_composer:
+      string_composer:            
+         pop dx                        ; Prelevo dallo stack salvando in dx (risalgo lo stack)
          add dl , '0'                  ; Converto in ascii
          mov [si] , dl                 ; Aggiungo in stringa
          inc si
-         pop dx                        ; Prelevo dallo stack salvando in dx (risalgo lo stack)
-      loop string_composer 
-      ret
+      loop string_composer
+      mov result, dx 
+      ret           
+   endp int2str 
+
+fine:
+endp main
