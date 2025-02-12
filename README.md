@@ -135,8 +135,11 @@ Stampare la stringa richiesta in input invertita usando un buffer
 ##### [Es. 36 - Conversione stringa](/Es%2036%20-%20str_conversions.asm)
 Convertire una stringa in decimale tramite una procedura str2int
 Convertire un numero decimale in stringa stampabile con la procedura int2str
-##### [Es. 36 - Conversione stringa](/Es%2037%20-%20Stampa_N_rand.asm)
+##### [Es. 37 - Generatore pseudocasuale](/Es%2037%20-%20Stampa_N_rand.asm)
 Implementare un programma che genera un numero casuale usando procedure e stack
+##### [Es. 38 - Generatore casuale](/Es%2038%20-%20Linear%20Congruential%20Generator.asm)
+Implementare un programma che permetta di generare valori randomici usando il linear congruential generator
+
 
 ---
 #### File template
